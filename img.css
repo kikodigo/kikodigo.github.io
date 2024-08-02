@@ -1,0 +1,18 @@
+.reduced-image {
+    position: relative; /* Define a posição relativa para a imagem */
+    clip: rect(0px, 200px, 2000px, 0px); /* Corta um retângulo de 200px x 200px a partir do canto superior esquerdo da imagem */
+   
+    
+    background-color: rgb(236, 236, 236); /* Define a cor de fundo como branco */
+    padding: 5px; /* Adiciona um espaçamento ao redor da imagem para separá-la do fundo */
+    border-radius: 10px; /* Arredonda as bordas da imagem em 10 pixels */
+    display: block; /* Define a imagem como bloco para centralizar */
+    margin-left: 1%; /* Define margens automáticas para centralizar a imagem */
+   
+}
+
+.back-logos {   
+    background-color: rgb(236, 236, 236); /* Define a cor de fundo como branco */
+    padding: 5px; /* Adiciona um espaçamento ao redor da imagem para separá-la do fundo */
+    border-radius: 10px; /* Arredonda as bordas da imagem em 10 pixels */
+}

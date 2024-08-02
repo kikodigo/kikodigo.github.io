@@ -1,0 +1,222 @@
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    word-break: break-word;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #e0e0e0; /* Cor de texto clara */
+    background-color: #121212; /* Fundo escuro */
+}
+
+/* MENU -------------------------------- */
+
+.menu {
+    overflow: auto;
+    width: 300px;
+    position: fixed;
+    height: 100%;
+    background-color: #1e1e1e; /* Fundo do menu escuro */
+}
+
+.menu .icon {
+    display: none;
+}
+
+.menu .hashTags {
+    padding-left: 20px;
+}
+
+.menu .links {
+    padding-left: 50px;
+    padding-top: 20px;
+    font-size: 10px;
+}
+
+.menu .links a {
+    font-size: 18px;
+    display: block;
+    padding: 4px;
+    text-decoration: none;
+    color: #e0e0e0; /* Cor de texto clara */
+}
+
+.menu .links a.active {
+    text-decoration: underline;
+}
+
+.menu .links a:hover:not(.active) {
+    text-decoration: underline;
+}
+
+.menu .links a:hover {
+    opacity: 0.7;
+}
+
+.profileCard {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7); /* Ajuste para sombra mais escura */
+    max-width: 280px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    background-color: #2b2b2b; /* Fundo do cartão escuro */
+}
+
+.profileCard h1 {
+    font-size: 20px;
+    color: #e0e0e0; /* Cor de texto clara */
+}
+
+.profileCard .photo {
+    width: 100%;
+    border-radius: 150px;
+}
+
+.profileCard .title {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.profileCard .title p {
+    color: grey;
+    font-size: 18px;
+    text-align: left;
+}
+
+.profileCard .at {
+    padding-left: 24px;
+    text-align: left;
+}
+
+.profileCard .social {
+    margin: 6px 0;
+    padding: 6px;
+}
+
+.profileCard .social span {
+    color: #e0e0e0; /* Cor de texto clara */
+    font-size: 28px;
+}
+
+@media screen and (max-width: 1007px) {
+    .menu {
+        overflow: hidden;
+        background-color: #1e1e1e; /* Fundo do menu escuro */
+        width: 100%;
+        position: relative;
+    }
+
+    .menu .icon {
+        display: none;
+    }
+
+    .profileCard {
+        box-shadow: none;
+        text-align: left;
+        font-family: arial;
+        float: left;
+        width: auto;
+        max-width: initial;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        background-color: #2b2b2b; /* Fundo do cartão escuro */
+    }
+
+    .profileCard .photo {
+        height: 60px;
+        width: auto;
+        float: left;
+    }
+
+    .profileCard h1 {
+        font-size: 12px;
+        float: left;
+        width: 60px;
+        margin-left: 10px;
+        color: #e0e0e0; /* Cor de texto clara */
+    }
+
+    .profileCard .title {
+        width: auto;
+        height: auto;
+        margin-left: 10px;
+        float: left;
+    }
+
+    .profileCard .title p {
+        color: grey;
+        font-size: 10px;
+        text-align: left;
+        margin: 0px;
+    }
+
+    .profileCard .at {
+        display: none;
+    }
+
+    .profileCard .social {
+        float: left;
+        margin: 0px 10px;
+        padding: 0px;
+    }
+
+    .profileCard .social span {
+        color: #e0e0e0; /* Cor de texto clara */
+        font-size: 28px;
+    }
+
+    .menu .links {
+        padding-left: 0px;
+        padding-top: 0px;
+        font-size: 10px;
+        float: left;
+        margin-left: 16px;
+    }
+
+    .menu .links a {
+        font-size: 18px;
+        float: left;
+        padding: 4px;
+        text-decoration: none;
+        color: #e0e0e0; /* Cor de texto clara */
+    }
+
+    .menu .links a.active {
+        text-decoration: underline;
+    }
+
+    .menu .links a:hover:not(.active) {
+        text-decoration: underline;
+    }
+
+    .menu .links a:hover {
+        opacity: 0.7;
+    }
+
+    .vrau {
+        text-decoration: green;
+        cursor: pointer;
+        text-decoration: underline;
+        text-decoration-color: pink;
+    }
+}
+
+/* CONTENT -------------------------------- */
+div.content {
+    margin-left: 300px;
+    padding: 10px 10px 20px 10px;
+    background-color: #1e1e1e; /* Fundo do conteúdo escuro */
+    color: #e0e0e0; /* Cor de texto clara */
+}
+
+@media screen and (max-width: 1007px) {
+    div.content {
+        margin-left: 0px;
+    }
+}
