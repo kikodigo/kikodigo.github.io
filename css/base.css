@@ -199,12 +199,6 @@ body {
         opacity: 0.7;
     }
 
-    .vrau {
-        text-decoration: green;
-        cursor: pointer;
-        text-decoration: underline;
-        text-decoration-color: pink;
-    }
 }
 
 /* CONTENT -------------------------------- */
