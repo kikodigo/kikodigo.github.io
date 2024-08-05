@@ -2,15 +2,30 @@
 <html>
 
 <head>
-
+    <title>Rodrigo Barbosa</title>
     <script src="https://kit.fontawesome.com/7a312fc647.js" crossorigin="anonymous"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const arrows = document.querySelectorAll('.arrow');
+
+            arrows.forEach(arrow => {
+                arrow.addEventListener('click', () => {
+                    const hiddenInfo = arrow.parentElement.nextElementSibling;
+                    if (hiddenInfo) {
+                        hiddenInfo.classList.toggle('hidden');
+                    }
+                });
+            });
+        });
+    </script>
 
     <link rel="stylesheet" type="text/css" href="css/base.css">
     <link rel="stylesheet" type="text/css" href="css/grid.css">
     <link rel="stylesheet" type="text/css" href="css/img.css">
 </head>
 
-<body onload="indexOnLoad()">
+<body>
     <div class="menu" id="mymenu">
         <div class="profileCard">
             <img src="https://media.licdn.com/dms/image/D4D03AQGg_L43Pb7Udw/profile-displayphoto-shrink_800_800/0/1676915705803?e=1727913600&v=beta&t=AugmyxahxHMuJXJabW437EKB7VdFecbuQZEhQa8SemI"
@@ -48,28 +63,103 @@
 
     <div class="content">
 
+        <style>
+            .hidden {
+                display: none;
+                /* Inicia as informações adicionais como ocultas */
+            }
+        </style>
 
-        <h2>Experiência Profissional</h2>
+        <h1>Experiência de Trabalho</h1>
         <ul>
             <li>
-                <p><strong>Desenvolvedor de software na TAG IMF</strong> <br><span class="date">(junho de 2022 -
-                        Presente)</span></p>
+                <p><strong>Desenvolvedor de software na TAG IMF</strong><br><span class="date">(junho de 2022 -
+                        Presente)</span> <span class="arrow">➜</span>
+                <div class="hidden">
+                    Desenvolvedor Back End Jr com 3 anos de experiência em desenvolvimento. <br>
+                    Atualmente, minhas principais tecnologias incluem <br>
+                    • .NET C#<br>
+                    • MongoDB<br>
+                    • Versionamento Git/GitHub<br>
+                    • Microserviços <br>
+                    • Google Cloud Platform (GCP)<br>
+                    • Pub/Sub <br>
+                    • DataDog. <br><br>
+                    Meu objetivo é continuar a me desenvolver profissionalmente, aprimorando minhas habilidades
+                    existentes e adquirindo novas.<br><br>
+
+                    Minhas competências incluem:<br>
+                    • Frameworks .NET e ASP.NET Core<br>
+                    • Modelagem de dados com MongoDB<br>
+                    • Google Cloud Platform<br>
+                    • Desenvolvimento de APIs REST com ASP.NET Core<br>
+                    • Test Driven Development com XUnit e Moq em C#<br>
+                    • Monitoramento de aplicações em escala com DataDog<br>
+                    • Implementação de CI/CD e metodologias ágeis utilizando Azure DevOps<br>
+                </div>
+                </p>
             </li>
             <li>
                 <p><strong>Analista de TI na Gestservi</strong> <br><span class="date">(agosto de 2018 - junho de
-                        2022)</span></p>
+                        2022)</span><span class="arrow">➜</span>
+                <div class="hidden">
+                    • Gerenciar todo o parque de TI da empresa;<br>
+                    • Desenvolver um sistema de controle de estoque com entrada e saída de mercadorias com linguagem em
+                    C# e banco de dados usando MySql no Visual Studio 2019;<br>
+                    • Prestar suporte ao usuário final para quaisquer dúvidas ou problemas que possam ocorrer;<br>
+                    • Construir e dar manutenção no RACK de informática com a instalação e configuração do servidor,
+                    implementação de sistema operacional para virtualização de servidores Windows 2016;<br>
+                    • Configurar o Active Directory juntamente com o DNS, DHCP e segurança de compartilhamento de pastas
+                    em rede;<br>
+                    • Efetuar a instalação de servidor de impressão;<br>
+                    • Implementar rotinas eficientes de backups;<br>
+                    • Garantir a segurança de rede focada na prevenção de invasões externas mantendo limites de acessos
+                    à usuários e controle arquivos recebidos externamente;<br>
+                    • Construir e dar manutenção e configuração de CFTV;<br>
+                    • Construir e dar manutenção e configuração de PABX com implementação de Placa disa para atendimento
+                    automático;<br>
+                    • Projeto desenvolvido: Planilha utilizando VBA Excel para controle de requisições, ordens de
+                    compras e histórico de envio<br>
+                </div>
+                </p>
             </li>
             <li>
                 <p><strong>Suporte técnico na Wave Tecnologia</strong> <br><span class="date">(janeiro de 2016 - agosto
-                        de 2018)</span></p>
+                        de 2018)</span><span class="arrow">➜</span>
+                <div class="hidden">
+                    • Realizar suporte local de empresas principalmente no ramo de hotéis com foco na resolução de
+                    possíveis falhas no sistema operacional;<br>
+                    • Concluir montagem física e configuração de rede com DCHP, DNS<br>
+                    • Vlan e Firewall incluindo autenticações de links dedicados;<br>
+                    • Concluir montagem e manutenção física em computadores, servidores e notebooks;<br>
+                    • Efetuar levantamento completo de Windows Server 2003, 2008 e 2012 configurando AD, DHCP, DNS, RDP,
+                    LoadBalance, Windows Server Backup, VPN;<br>
+                    • Gerenciar pastas de rede com configuração completa de permissões e scripts de mapeamento de
+                    unidades de rede setadas via Active Directory;<br>
+                    • Configurar sistema Mikrotik via WinBox com especialização em hotspot para controle de banda e
+                    limite de tempo e acesso;<br>
+                    • Construir e dar manutenção de sistema CFTV</div>
+                </p>
             </li>
             <li>
                 <p><strong>Operador de Computador Externo IVD na Rca Sistemas</strong> <br><span class="date">(junho de
-                        2013 - março de 2015)</span></p>
+                        2013 - março de 2015)</span><span class="arrow">➜</span>
+                <div class="hidden">Operador de computador externo IVD, realizando suporte presencial do
+                    sistema criado pela própria empresa com foco no gerenciamento de
+                    estoque, emissão de DANFE e cupons fiscais, adquirindo conhecimentos
+                    intermediários em edição de base de dados via DBF e Access, além de
+                    conhecimento em redes e mapeamento de pastas via Windows.</div>
+                </p>
             </li>
             <li>
                 <p><strong>Estágio no Fórum Universitário da Universidade Candido Mendes</strong> <br><span
-                        class="date">(dezembro de 2011 - maio de 2013)</span></p>
+                        class="date">(dezembro de 2011 - maio de 2013)</span><span class="arrow">➜</span>
+                <div class="hidden">Estagiário na área de informática, realizando acompanhamento e
+                    monitoramento da rede cabeada e wi-fi de computadores, resolvendo
+                    quaisquer problemas técnicos que ocasionarem; protocolando processos
+                    jurídicos nas varas; e esclarecendo dúvidas e orientando os alunos em
+                    atividades rotineiras da prática jurídica</div>
+                </p>
             </li>
         </ul>
 
@@ -85,8 +175,7 @@
                     alt="dotnet" width="40" height="40" class="back-logos" />
             </a>
             <a href="https://www.microsoft.com/pt-br/microsoft-365/excel" target="_blank" rel="noreferrer">
-                <img src="rsc/excel-vba.png"
-                    alt="VBA - Excel" width="40" height="40" class="back-logos" />
+                <img src="rsc/excel-vba.png" alt="VBA - Excel" width="40" height="40" class="back-logos" />
             </a>
 
         <h3>Tools:</h3>
