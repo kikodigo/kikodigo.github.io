@@ -12,7 +12,13 @@
 }
 
 .back-logos {   
-    background-color: rgb(236, 236, 236); /* Define a cor de fundo como branco */
+    background-color: rgb(255, 255, 255); /* Define a cor de fundo como branco */
     padding: 5px; /* Adiciona um espaçamento ao redor da imagem para separá-la do fundo */
     border-radius: 10px; /* Arredonda as bordas da imagem em 10 pixels */
+}
+
+.inline-images{
+    display: inline-block; /* Define os parágrafos como elementos de bloco em linha */
+    margin: 0; /* Remove as margens padrão entre os elementos */
+    padding: 0; /* Remove o preenchimento padrão entre os elementos */
 }
